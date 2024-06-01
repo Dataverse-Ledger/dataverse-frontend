@@ -13,7 +13,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        sfRegular: ["SF Florencesans Regular", "sans-serif"],
+        sfOutline: ["SF Florencesans Outline", "sans-serif"],
+        sfShaded: ["SF Florencesans Shaded", "sans-serif"],
+
+      },
     },
+
   },
   plugins: [],
 };
