@@ -2,9 +2,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Navbar() {
     const [scroll, setScroll] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -21,8 +23,13 @@ export default function Navbar() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const handleMenuToggle = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
-        <div className='fixed top-0 left-0 right-0 max-h-20 z-50'>
+        <div className='fixed top-0 left-0 right-0 z-50'>
             <div className={`flex flex-row py-6 px-10 justify-between items-center font-poppinsRegular ${scroll ? 'bg-white text-black' : 'text-white'}`}>
                 <Link href="/" className='flex flex-row gap-4 text-xl items-center'>
                     <div className='relative w-8 h-8'>
@@ -30,12 +37,12 @@ export default function Navbar() {
                     </div>
                     Dataverse
                 </Link>
-                <div className='flex flex-row items-center text-lg gap-10 font-poppinsThin'>
+                <div className='hidden lg:flex flex-row items-center text-lg gap-10 font-poppinsThin'>
                     <Link href="https://github.com/Dataverse-Ledger" target='_blank'>
                         Github
                     </Link>
                     <Link href="https://github.com/Dataverse-Ledger/Dataverse-Ledger/blob/main/README.md" target='_blank'>
-                        Doumentation
+                        Documentation
                     </Link>
                     <Link href="#features">
                         Features
@@ -44,12 +51,36 @@ export default function Navbar() {
                         Whitepaper
                     </Link>
                 </div>
-                <div>
+                <div className='hidden lg:block'>
                     <Link href="/" className='bg-white shadow-md hover:bg-gray-200 transition-all shadow-white text-black text-center font-poppinsThin rounded-xl px-10 py-2 text-lg lg:w-[12vw]'>
                         DEMO
                     </Link>
                 </div>
+                <div className='lg:hidden'>
+                    <button onClick={handleMenuToggle} className='text-2xl'>
+                        {menuOpen ? <FaTimes /> : <FaBars />}
+                    </button>
+                </div>
             </div>
+            {menuOpen && (
+                <div className={`lg:hidden flex flex-col items-center bg-white text-black py-4`}>
+                    <Link href="https://github.com/Dataverse-Ledger" target='_blank' className='py-2'>
+                        Github
+                    </Link>
+                    <Link href="https://github.com/Dataverse-Ledger/Dataverse-Ledger/blob/main/README.md" target='_blank' className='py-2'>
+                        Documentation
+                    </Link>
+                    <Link href="#features" className='py-2'>
+                        Features
+                    </Link>
+                    <Link href="/" className='py-2'>
+                        Whitepaper
+                    </Link>
+                    <Link href="/" className='bg-white shadow-md hover:bg-gray-200 transition-all shadow-white text-black text-center font-poppinsThin rounded-xl px-10 py-2 text-lg mt-4 w-3/4'>
+                        DEMO
+                    </Link>
+                </div>
+            )}
         </div>
-    )
+    );
 }
