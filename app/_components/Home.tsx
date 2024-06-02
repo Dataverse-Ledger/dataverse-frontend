@@ -21,12 +21,15 @@ export default function Home() {
                 <div className='text-white z-10 text-2xl font-poppinsRegular'>
                     Join Dataverse to transform your data into assets. Our secure, decentralized platform enables effortless data capture, management, and trading from diverse devices and sensors. Empower your data with blockchain for innovation and growth.
                 </div>
-                <div className='z-30 flex flex-col lg:flex-row gap-10'>
-                    <Link href="/dashboard" className='bg-white text-center font-poppinsThin rounded-xl px-10 py-3 text-xl lg:w-[12vw]'>
+                <div className='z-30 flex flex-col lg:flex-row gap-10 text-black'>
+                    <Link href="/dashboard" className='bg-white shadow-md shadow-white text-center font-poppinsThin rounded-xl px-10 py-3 text-xl lg:w-[12vw]'>
                         DASHBOARD
                     </Link>
-                    <Link href="/dashboard" className='bg-white text-center font-poppinsThin rounded-xl px-10 py-3 text-xl lg:w-[12vw]'>
-                        GITHUB
+
+                    <Link href="/dashboard" className=''>
+                        <div className='bg-white shadow-md shadow-white text-center font-poppinsThin rounded-xl px-10 py-3 text-xl lg:w-[12vw]'>
+                            GITHUB
+                        </div>
                     </Link>
                 </div>
             </div>
