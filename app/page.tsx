@@ -1,8 +1,11 @@
-import Image from "next/image";
+import Home from "./_components/Home";
 
-export default function Home() {
+
+
+export default function App() {
   return (
-    <div className="text-5xl font-sfShaded">
+    <div className="min-h-screen bg-black">
+      <Home />
     </div>
   );
 }
