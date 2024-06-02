@@ -26,7 +26,7 @@ export default function Navbar() {
             <div className={`flex flex-row py-6 px-10 justify-between items-center font-poppinsRegular ${scroll ? 'bg-white text-black' : 'text-white'}`}>
                 <Link href="/" className='flex flex-row gap-4 text-xl items-center'>
                     <div className='relative w-8 h-8'>
-                        <Image src='/images/logo.png' alt='logo' fill />
+                        <Image src={`${scroll ? '/images/logo_black.png' : '/images/logo.png'}`} alt='logo' fill />
                     </div>
                     Dataverse
                 </Link>
