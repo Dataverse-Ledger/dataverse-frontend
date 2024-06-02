@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 import { SiNextdotjs } from 'react-icons/si';
 
@@ -54,7 +55,15 @@ export default function Features() {
 
     return (
         <div className='min-h-screen bg-white relative pb-20'>
-            <div className='flex flex-col gap-4 px-20 pt-20'>
+            <div className='bg-white flex flex-row justify-center items-center rounded-tr-[100px] rounded-bl-[100px] shadow-lg lg:mx-60 py-10 -translate-y-1/4'>
+                <div className='font-poppinsSemiBold text-[3vw] text-stroke-black text-white'>
+                    Built On
+                </div>
+                <div className='relative h-32 w-[22vw]'>
+                    <Image src='/images/hypersdklogo.png' alt='' fill className='object-contain' />
+                </div>
+            </div>
+            <div className='flex flex-col gap-4 px-20'>
                 <span className='text-stroke-black text-white font-poppinsSemiBold text-7xl'>Features</span>
                 <div className='border-b border-black'></div>
             </div>
