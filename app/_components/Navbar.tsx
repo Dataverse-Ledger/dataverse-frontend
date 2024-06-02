@@ -30,20 +30,23 @@ export default function Navbar() {
                     </div>
                     Dataverse
                 </Link>
-                <div className='flex flex-row items-center gap-10 font-poppinsThin'>
-                    <Link href="/">
-                        Dashboard
+                <div className='flex flex-row items-center text-lg gap-10 font-poppinsThin'>
+                    <Link href="https://github.com/Dataverse-Ledger" target='_blank'>
+                        Github
+                    </Link>
+                    <Link href="https://github.com/Dataverse-Ledger/Dataverse-Ledger/blob/main/README.md" target='_blank'>
+                        Doumentation
+                    </Link>
+                    <Link href="#features">
+                        Features
                     </Link>
                     <Link href="/">
                         Whitepaper
                     </Link>
-                    <Link href="/">
-                        Use Cases
-                    </Link>
                 </div>
                 <div>
-                    <Link href="/">
-                        Dashboard
+                    <Link href="/" className='bg-white shadow-md shadow-white text-black text-center font-poppinsThin rounded-xl px-10 py-2 text-lg lg:w-[12vw]'>
+                        DEMO
                     </Link>
                 </div>
             </div>

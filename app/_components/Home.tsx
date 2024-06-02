@@ -22,11 +22,11 @@ export default function Home() {
                     Join Dataverse to transform your data into assets. Our secure, decentralized platform enables effortless data capture, management, and trading from diverse devices and sensors. Empower your data with blockchain for innovation and growth.
                 </div>
                 <div className='z-30 flex flex-col lg:flex-row gap-10 text-black'>
-                    <Link href="/dashboard" className='bg-white shadow-md shadow-white text-center font-poppinsThin rounded-xl px-10 py-3 text-xl lg:w-[12vw]'>
+                    {/* <Link href="/dashboard" className='bg-white shadow-md shadow-white text-center font-poppinsThin rounded-xl px-10 py-3 text-xl lg:w-[12vw]'>
                         DASHBOARD
-                    </Link>
+                    </Link> */}
 
-                    <Link href="/dashboard" className=''>
+                    <Link href="https://github.com/Dataverse-Ledger" target='_blank' className=''>
                         <div className='bg-white shadow-md shadow-white text-center font-poppinsThin rounded-xl px-10 py-3 text-xl lg:w-[12vw]'>
                             GITHUB
                         </div>

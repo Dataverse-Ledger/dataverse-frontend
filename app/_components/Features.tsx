@@ -1,5 +1,10 @@
 import Image from 'next/image';
 import React from 'react'
+import { AiOutlineApi, AiOutlineGlobal } from 'react-icons/ai';
+import { CgWebsite } from 'react-icons/cg';
+import { CiLock } from 'react-icons/ci';
+import { HiOutlineCommandLine } from 'react-icons/hi2';
+import { LiaNetworkWiredSolid } from 'react-icons/lia';
 import { SiNextdotjs } from 'react-icons/si';
 
 type feature = {
@@ -10,7 +15,12 @@ type feature = {
 }
 
 const iconMap: any = {
-    SiNextdotjs: <SiNextdotjs className='text-5xl text-blue-500' />,
+    LiaNetworkWiredSolid: <LiaNetworkWiredSolid className='text-6xl text-red-500' />,
+    HiOutlineCommandLine: <HiOutlineCommandLine className='text-6xl text-red-500' />,
+    AiOutlineApi: <AiOutlineApi className='text-6xl text-red-500' />,
+    CiLock: <CiLock className='text-6xl text-red-500' />,
+    CgWebsite: <CgWebsite className='text-6xl text-red-500' />,
+    AiOutlineGlobal: <AiOutlineGlobal className='text-6xl text-red-500' />
 };
 
 const features: feature[] = [
@@ -18,43 +28,43 @@ const features: feature[] = [
         key: 1,
         name: "Custom Blockchain",
         description: "Custom blockchain created using Avalanche HyperSDK for high performance, scalability, and security, tailored to manage and trade scientific data efficiently",
-        icon: "SiNextdotjs"
+        icon: "LiaNetworkWiredSolid"
     },
     {
         key: 1,
         name: "Dataverse CLI",
         description: "The Dataverse CLI allows for seamless data transactions, blockchain queries, and workflow automation for advanced users.",
-        icon: "SiNextdotjs"
+        icon: "HiOutlineCommandLine"
     },
     {
         key: 1,
         name: "JSON RPC for sensors and Devices",
         description: "Easily integrate sensors and devices using our JSON RPC interface for real-time data capture and management.",
-        icon: "SiNextdotjs"
+        icon: "AiOutlineApi"
     },
     {
         key: 1,
         name: "Secure And Immutable",
         description: "Experience top-tier security with immutable records, ensuring your data is tamper-proof and verifiable.",
-        icon: "SiNextdotjs"
+        icon: "CiLock"
     },
     {
         key: 1,
         name: "User Friendly Frontend",
         description: "Our intuitive frontend interface allows for easy navigation, data visualization, and management.",
-        icon: "SiNextdotjs"
+        icon: "CgWebsite"
     },
     {
         key: 1,
         name: "Make your Data Globaly Available",
         description: "Expand your data's reach by making it globally accessible for collaboration and sharing among researchers worldwide.",
-        icon: "SiNextdotjs"
+        icon: "AiOutlineGlobal"
     },
 ]
 export default function Features() {
 
     return (
-        <div className='min-h-screen bg-white relative pb-20'>
+        <div className='min-h-screen bg-white relative pb-20' id='features'>
             <div className='bg-white flex flex-row justify-center items-center rounded-tr-[100px] rounded-bl-[100px] shadow-lg lg:mx-60 py-10 -translate-y-1/4'>
                 <div className='font-poppinsSemiBold text-[3vw] text-stroke-black text-white'>
                     Built On
