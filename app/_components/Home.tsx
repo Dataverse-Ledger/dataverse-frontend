@@ -13,8 +13,8 @@ export default function Home() {
     };
     return (
         <div className="min-h-screen flex w-full">
-            <div className="z-10 text-[5vw] my-auto lg:w-[70vw] font-poppinsRegular text-white px-10">
-                Unlock the Power of Your Data with Dataverse
+            <div className="z-10 text-[5.5vw] my-auto lg:w-[70vw] font-poppinsRegular text-white px-10 leading-none">
+                Unlock the Power of Your Data with <span className='text-transparent text-[6vw] text-stroke-lg'>Dataverse</span>
             </div>
             <div className="absolute w-screen h-screen overflow-clip">
                 <div className="absolute w-[150vw] h-[150vh] overflow-clip">
@@ -22,11 +22,11 @@ export default function Home() {
                         src="/images/Gradient3.webp"
                         alt="Gradient"
                         className=""
-                        initial={{ x: 0, y: -600, rotate: 60 }}
+                        initial={{ x: -400, y: -600, rotate: 60 }}
                         animate={{
-                            x: -1000, y: -1000, rotate: 0
+                            x: -400, y: -600, rotate: 360
                         }}
-                        transition={{ duration: 600, repeat: Infinity }}
+                        transition={{ duration: 400, repeat: Infinity }}
                     />
                 </div>
                 <div className="absolute w-[250vw] h-[250vh] overflow-clip">
