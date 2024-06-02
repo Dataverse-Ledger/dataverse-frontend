@@ -45,7 +45,7 @@ export default function Navbar() {
                     </Link>
                 </div>
                 <div>
-                    <Link href="/" className='bg-white shadow-md shadow-white text-black text-center font-poppinsThin rounded-xl px-10 py-2 text-lg lg:w-[12vw]'>
+                    <Link href="/" className='bg-white shadow-md hover:bg-gray-200 transition-all shadow-white text-black text-center font-poppinsThin rounded-xl px-10 py-2 text-lg lg:w-[12vw]'>
                         DEMO
                     </Link>
                 </div>

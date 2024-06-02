@@ -79,7 +79,7 @@ export default function Features() {
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-10 px-20 pt-10'>
                 {features.map((f) => (
-                    <div key={f.key} className="bg-white shadow-xl text-black p-10 flex flex-col gap-4 border-2 text-xl rounded-lg">
+                    <div key={f.key} className="bg-white shadow-xl hover:scale-105 transition-all text-black p-10 flex flex-col gap-4 border-2 text-xl rounded-lg">
                         <div>{iconMap[f.icon]}</div>
                         <div className='font-poppinsSemiBold'>{f.name}</div>
                         <div className='font-poppinsRegular'>{f.description}</div>

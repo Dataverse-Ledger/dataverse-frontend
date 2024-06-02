@@ -27,7 +27,7 @@ export default function Home() {
                     </Link> */}
 
                     <Link href="https://github.com/Dataverse-Ledger" target='_blank' className=''>
-                        <div className='bg-white shadow-md shadow-white text-center font-poppinsThin rounded-xl px-10 py-3 text-xl lg:w-[12vw]'>
+                        <div className='bg-white shadow-md shadow-white hover:bg-gray-200 transition-all text-center font-poppinsThin rounded-xl px-10 py-3 text-xl lg:w-[12vw]'>
                             GITHUB
                         </div>
                     </Link>
