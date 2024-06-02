@@ -21,8 +21,8 @@ const config: Config = {
       textStroke: {
         DEFAULT: '1px white',
         sm: '0.5px white',
-        md: '2px white',
         lg: '3px white',
+        black: '2px black',
       },
     },
   },
