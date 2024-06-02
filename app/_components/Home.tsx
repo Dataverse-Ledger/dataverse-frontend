@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -13,8 +14,16 @@ export default function Home() {
     };
     return (
         <div className="min-h-screen flex w-full">
-            <div className="z-10 text-[5.5vw] my-auto lg:w-[70vw] font-poppinsRegular text-white px-10 leading-none">
-                Unlock the Power of Your Data with <span className='text-transparent text-[6vw] text-stroke-lg'>Dataverse</span>
+            <div className='flex flex-col items-start my-auto px-20 gap-10 lg:w-[70vw]'>
+                <div className="text-[5.5vw] z-10 font-poppinsRegular lg:mt-20 text-white leading-none">
+                    Unlock the Power of Your Data with <span className='text-transparent font-poppinsSemiBold text-[6vw] text-stroke-lg'>Dataverse</span>
+                </div>
+                <div className='text-white z-10 text-2xl font-poppinsRegular'>
+                    Join Dataverse to transform your data into assets. Our secure, decentralized platform enables effortless data capture, management, and trading from diverse devices and sensors. Empower your data with blockchain for innovation and growth.
+                </div>
+                <Link href="/dashboard" className='bg-white z-50 font-poppinsThin rounded-xl px-10 py-3 text-xl'>
+                    DASHBOARD
+                </Link>
             </div>
             <div className="absolute w-screen h-screen overflow-clip">
                 <div className="absolute w-[150vw] h-[150vh] overflow-clip">
@@ -29,28 +38,28 @@ export default function Home() {
                         transition={{ duration: 400, repeat: Infinity }}
                     />
                 </div>
-                <div className="absolute w-[250vw] h-[250vh] overflow-clip">
-                    <motion.img
-                        src="/images/Gradient1.webp"
-                        alt="Gradient"
-                        className=""
-                        initial={{ x: -300, y: 300, rotate: 50, opacity: 1 }}
-                        animate={{
-                            x: 1000, y: 0, rotate: 360, opacity: 0.5
-                        }}
-                        transition={{ duration: 300, repeat: Infinity }}
-                    />
-                </div>
                 <div className="absolute w-[150vw] h-[150vh] overflow-clip">
                     <motion.img
                         src="/images/Gradient2.webp"
                         alt="Gradient"
                         className=""
-                        initial={{ x: -500, y: -1000, rotate: 0, opacity: 1 }}
+                        initial={{ x: -500, y: -800, rotate: 50, opacity: 1 }}
                         animate={{
                             x: -1000, y: -200, rotate: 180, opacity: 0.2
                         }}
-                        transition={{ duration: 200, repeat: Infinity }}
+                        transition={{ duration: 300, repeat: Infinity }}
+                    />
+                </div>
+                <div className="absolute w-[300vw] h-[300vw] overflow-clip">
+                    <motion.img
+                        src="/images/Gradient1.webp"
+                        alt="Gradient"
+                        className=""
+                        initial={{ x: -300, y: 300, rotate: 50, opacity: 0.5 }}
+                        animate={{
+                            x: 1000, y: 0, rotate: 360, opacity: 0.2
+                        }}
+                        transition={{ duration: 500, repeat: Infinity }}
                     />
                 </div>
             </div>
