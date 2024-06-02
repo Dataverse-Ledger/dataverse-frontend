@@ -4,18 +4,18 @@
 
 
 @font-face {
-  font-family: "SF Florencesans Regular";
-  src: url("../public/sf-florencesans.regular.ttf");
+  font-family: "Poppins Regular";
+  src: url("../public/poppins.regular.ttf");
 }
 
 @font-face {
-  font-family: "SF Florencesans Outline";
-  src: url("../public/sf-florencesans.outline.ttf");
+  font-family: "Poppins Thin";
+  src: url("../public/poppins.thin.ttf");
 }
 
 @font-face {
-  font-family: "SF Florencesans Shaded";
-  src: url("../public/sf-florencesans.shaded.ttf");
+  font-family: "Poppins SemiBold";
+  src: url("../public/poppins.semibold.ttf");
 }
 
 :root {
@@ -34,12 +34,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
