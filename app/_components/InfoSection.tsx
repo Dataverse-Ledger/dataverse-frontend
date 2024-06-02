@@ -16,7 +16,7 @@ export default function InfoSection() {
                         <div>
                             More than just a trading platform, Dataverse is a secure, decentralized ecosystem where data from various devices and sensors converge, creating a rich tapestry of insights and opportunities. With its custom blockchain technology, Dataverse ensures the integrity, security, and accessibility of data, fostering collaboration and innovation across diverse industries.
                         </div>
-                        <div>Whether you're a scientist seeking to unlock the mysteries of the universe, a business owner aiming to optimize operations, or an individual looking to better understand your personal data, Dataverse provides the tools and infrastructure to transform raw data into actionable intelligence. By democratizing access to data and fostering a culture of openness and collaboration, Dataverse is paving the way for a more connected, informed, and empowered future.
+                        <div>Whether you&apos;re a scientist seeking to unlock the mysteries of the universe, a business owner aiming to optimize operations, or an individual looking to better understand your personal data, Dataverse provides the tools and infrastructure to transform raw data into actionable intelligence. By democratizing access to data and fostering a culture of openness and collaboration, Dataverse is paving the way for a more connected, informed, and empowered future.
                         </div>
                     </div>
 
