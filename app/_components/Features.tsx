@@ -65,7 +65,7 @@ export default function Features() {
 
     return (
         <div className='min-h-screen bg-white relative pb-20' id='features'>
-            <div className='bg-white flex flex-row justify-center items-center rounded-tr-[100px] rounded-bl-[100px] shadow-lg mx-10 lg:mx-60 py-2 lg:py-10 -translate-y-1/4'>
+            <div className='bg-white flex flex-row justify-center items-center rounded-tr-[50px] rounded-bl-[50px] lg:rounded-tr-[100px] lg:rounded-bl-[100px] shadow-lg mx-10 lg:mx-60 py-2 lg:py-10 -translate-y-1/4'>
                 <div className='font-poppinsSemiBold text-2xl lg:text-[3vw] text-stroke-black text-white'>
                     Built On
                 </div>
