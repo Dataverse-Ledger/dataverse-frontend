@@ -68,7 +68,7 @@ export default function Features() {
                 ))}
             </div>
             <div className="z-20 pointer-events-none absolute top-0 bottom-0 right-0 left-0" >
-                <div className="z-10 w-full h-full bg-repeat opacity-[0.15] bg-[url('../public/images/bg-noise2.png')]"></div>
+                <div className="z-10 w-full h-full bg-repeat opacity-[0.10] bg-[url('../public/images/bg-noise2.png')]"></div>
             </div>
         </div>
     )

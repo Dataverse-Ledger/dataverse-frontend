@@ -25,27 +25,27 @@ export default function InfoSection() {
                 <div className="absolute z-20 pointer-events-none top-0 bottom-0 right-0 left-0 bg-[linear-gradient(220deg,rgba(255,255,255,0)_60.05382521119378%,hsl(0,0%,0%)_120.0062716057621%)] rounded-tr-[200px] rounded-bl-[200px]">
                     <div className="z-10 w-full h-full bg-repeat opacity-[0.10] bg-[url('../public/images/bg-noise2.png')] rounded-tr-[200px] rounded-bl-[200px]"></div>
                 </div>
-                <div className="absolute z-0 top-0 left-0 right-0 bottom-0 h-full w-full overflow-clip opacity-40">
-                    <div className="absolute w-[100vw] h-[150vh] ">
+                <div className="absolute z-0 top-0 left-0 right-0 bottom-0 h-full w-full overflow-clip ">
+                    <div className="absolute w-[300vw] h-[300vh] ">
                         <motion.img
-                            src="/images/Gradient2.webp"
+                            src="/images/Gradient4.webp"
                             alt="Gradient"
                             className=""
-                            initial={{ x: -500, y: -200, rotate: 50, opacity: 1 }}
+                            initial={{ x: 0, y: 0, rotate: 50, opacity: 1 }}
                             animate={{
-                                x: -1000, y: -200, rotate: 180, opacity: 0.2
+                                x: -1000, y: -200, rotate: 180, opacity: 1
                             }}
                             transition={{ duration: 200, repeat: Infinity }}
                         />
                     </div>
                     <div className="absolute w-[300vw] h-[300vw] ">
                         <motion.img
-                            src="/images/Gradient1.webp"
+                            src="/images/Gradient5.webp"
                             alt="Gradient"
                             className=""
-                            initial={{ x: 0, y: 300, rotate: 50, opacity: 0.5 }}
+                            initial={{ x: 400, y: -200, rotate: 50, opacity: 1 }}
                             animate={{
-                                x: 1000, y: 0, rotate: 360, opacity: 0.2
+                                x: 1000, y: 0, rotate: 360, opacity: 1
                             }}
                             transition={{ duration: 500, repeat: Infinity }}
                         />
