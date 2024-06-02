@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 
 export default function InfoSection() {
     return (
-        <div className='min-h-screen bg-white p-20'>
-            <div className='relative border-2 p-32 rounded-tr-[200px] rounded-bl-[200px] bg-black overflow-clip'>
+        <div className='min-h-screen bg-white p-5 lg:p-20'>
+            <div className='relative p-10 lg:p-32 rounded-tr-[100px] rounded-bl-[100px] lg:rounded-tr-[200px] lg:rounded-bl-[200px] bg-black overflow-clip'>
                 <div className='z-40 flex flex-col gap-10 font-poppinsRegular text-white'>
-                    <div className='text-[3.5vw]'>
+                    <div className='text-2xl lg:text-[3.5vw]'>
                         What is <span className='font-poppinsSemiBold'>Dataverse</span>?
                     </div>
-                    <div className='text-[1.4vw] flex flex-col gap-4'>
+                    <div className='text-lg lg:text-[1.4vw] flex flex-col gap-4'>
                         <div>
                             Dataverse is a cutting-edge platform designed to revolutionize the way we interact with data. At its core, Dataverse represents a new frontier in data management, empowering individuals, businesses, and researchers to harness the power of their data like never before.
                         </div>
@@ -22,8 +22,8 @@ export default function InfoSection() {
 
                 </div>
 
-                <div className="absolute z-20 pointer-events-none top-0 bottom-0 right-0 left-0 bg-[linear-gradient(220deg,rgba(255,255,255,0)_60.05382521119378%,hsl(0,0%,0%)_120.0062716057621%)] rounded-tr-[200px] rounded-bl-[200px]">
-                    <div className="z-10 w-full h-full bg-repeat opacity-[0.10] bg-[url('../public/images/bg-noise2.png')] rounded-tr-[200px] rounded-bl-[200px]"></div>
+                <div className="absolute z-20 pointer-events-none top-0 bottom-0 right-0 left-0 bg-[linear-gradient(220deg,rgba(255,255,255,0)_60.05382521119378%,hsl(0,0%,0%)_120.0062716057621%)] rounded-tr-[100px] rounded-bl-[100px] lg:rounded-tr-[200px] lg:rounded-bl-[200px]">
+                    <div className="z-10 w-full h-full bg-repeat opacity-[0.10] bg-[url('../public/images/bg-noise2.png')] rounded-tr-[100px] rounded-bl-[100px] lg:rounded-tr-[200px] lg:rounded-bl-[200px]"></div>
                 </div>
                 <div className="absolute z-0 top-0 left-0 right-0 bottom-0 h-full w-full overflow-clip ">
                     <div className="absolute w-[300vw] h-[300vh] ">

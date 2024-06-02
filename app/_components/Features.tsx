@@ -65,19 +65,19 @@ export default function Features() {
 
     return (
         <div className='min-h-screen bg-white relative pb-20' id='features'>
-            <div className='bg-white flex flex-row justify-center items-center rounded-tr-[100px] rounded-bl-[100px] shadow-lg lg:mx-60 py-10 -translate-y-1/4'>
-                <div className='font-poppinsSemiBold text-[3vw] text-stroke-black text-white'>
+            <div className='bg-white flex flex-row justify-center items-center rounded-tr-[100px] rounded-bl-[100px] shadow-lg mx-10 lg:mx-60 py-2 lg:py-10 -translate-y-1/4'>
+                <div className='font-poppinsSemiBold text-2xl lg:text-[3vw] text-stroke-black text-white'>
                     Built On
                 </div>
-                <div className='relative h-32 w-[22vw]'>
+                <div className='relative h-32 w-32 lg:h-32 lg:w-[22vw]'>
                     <Image src='/images/hypersdklogo.png' alt='' fill className='object-contain' />
                 </div>
             </div>
-            <div className='flex flex-col gap-4 px-20'>
-                <span className='text-stroke-black text-white font-poppinsSemiBold text-7xl'>Features</span>
+            <div className='flex flex-col gap-4 px-5 lg:px-20'>
+                <span className='text-stroke-black text-white font-poppinsSemiBold text-5xl lg:text-7xl'>Features</span>
                 <div className='border-b border-black'></div>
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-10 px-20 pt-10'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-10 px-5 lg:px-20 pt-10'>
                 {features.map((f) => (
                     <div key={f.key} className="bg-white shadow-xl hover:scale-105 transition-all text-black p-10 flex flex-col gap-4 border-2 text-xl rounded-lg">
                         <div>{iconMap[f.icon]}</div>
