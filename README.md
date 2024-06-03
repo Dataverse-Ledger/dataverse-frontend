@@ -1,3 +1,7 @@
+# Dataverse Ledger
+
+![image](https://github.com/Dataverse-Ledger/Dataverse-Ledger/assets/97180942/eafc7f88-3f5d-4906-a052-9cd5882fac53)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
