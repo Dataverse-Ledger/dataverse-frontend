@@ -52,7 +52,7 @@ export default function Navbar() {
                     </Link>
                 </div>
                 <div className='hidden lg:block'>
-                    <Link href="/" className='bg-white shadow-md hover:bg-gray-200 transition-all shadow-white text-black text-center font-poppinsThin rounded-xl px-10 py-2 text-lg lg:w-[12vw]'>
+                    <Link href="https://youtu.be/HOx-NEwyGtw?si=QkkALTJGriuNe1jO" target='_blank' className='bg-white shadow-md hover:bg-gray-200 transition-all shadow-white text-black text-center font-poppinsThin rounded-xl px-10 py-2 text-lg lg:w-[12vw]'>
                         DEMO
                     </Link>
                 </div>
@@ -76,7 +76,7 @@ export default function Navbar() {
                     <Link href="/" className='py-2'>
                         Whitepaper
                     </Link>
-                    <Link href="/" className='bg-white shadow-md hover:bg-gray-200 transition-all shadow-white text-black text-center font-poppinsThin rounded-xl px-10 py-2 text-lg mt-4 w-3/4'>
+                    <Link href="https://youtu.be/HOx-NEwyGtw?si=QkkALTJGriuNe1jO" target='_blank' className='bg-white shadow-md hover:bg-gray-200 transition-all shadow-white text-black text-center font-poppinsThin rounded-xl px-10 py-2 text-lg mt-4 w-3/4'>
                         DEMO
                     </Link>
                 </div>
